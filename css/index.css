@@ -4,6 +4,60 @@ body{
   margin:0;
   background-color:#ffffff;
 }
+#outerbox
+{
+width:700px;
+margin: 1px auto;
+display: block;
+overflow:hidden;
+}
+#sliderbox{
+ position:relative;
+ width:2800px;
+ animation: jatinder 20s infinite;
+ }
+ #sliderbox img{
+   float:left;
+ }
+ @keyframes jatinder{
+   0%
+   {
+     left:0px;
+   }
+   20%
+   {
+     left:0px;
+   }
+   25%
+   {
+     left:-700px;
+   }
+   45%
+   {
+     left:-700px;
+   }
+   50%
+   {
+     left:-1400px;
+   }
+   70%
+   {
+     left:-1400px;
+   }
+   75%
+   {
+     left:-2100px;
+   }
+   95%
+   {
+     left:-2100px;
+   }
+   100%
+   {
+     left:-2800px;
+   }
+ }
+
 
 /* Global */
 .container{
@@ -30,13 +84,6 @@ ul{
   color:#ffffff;
 }
 
-.dark{
-  padding:15px;
-  background:#35424a;
-  color:#ffffff;
-  margin-top:10px;
-  margin-bottom:10px;
-}
 
 /* Header **/
 header{
@@ -95,10 +142,13 @@ header a:hover{
   color:#ffffff;
 }
 
-#showcase h1{
-  margin-top:100px;
-  font-size:55px;
+h2{
+  margin-top:20px;
+  font-size:30px;
   margin-bottom:10px;
+  color:black;
+  text-align:center;
+  text-decoration: underline;
 }
 
 #showcase p{
