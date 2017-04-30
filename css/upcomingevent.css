@@ -5,15 +5,45 @@ body{
   background-color:#ffffff;
 }
 
-/* Global */
+//* Global */
 .container{
-  width:80%;
+  width:100%;
   margin:auto;
   overflow:hidden;
+    
 }
 
-#socialmediaicons{
-position: absolute; right: 20px; top: 80px;
+.container-fluid{
+ padding-bottom: 25px;
+    
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.9;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    color: white;
 }
 
 ul{
@@ -30,17 +60,13 @@ ul{
   color:#ffffff;
 }
 
-
-/* Header **/
+//* Header **/
 header{
   background:#ffffff;
   color:#ffffff;
   padding-top:10px;
   min-height:70px;
   border-bottom:#2841fc 10px solid;
-  #social-media-icons { float: right; }
-  #social-media-icons ul li { display: inline; }
-  #social-media-icons ul { padding: 10px 10px 10px 10px; float: right }
 
 }
 
@@ -65,10 +91,6 @@ header #branding h1{
   margin:0;
 }
 
-header nav{
-  float:right;
-  margin-top:10px;
-}
 
 header .highlight, header .current a,h2{
   color:#000000;
@@ -78,6 +100,15 @@ header .highlight, header .current a,h2{
 header a:hover{
   color:#cccccc;
   font-weight:bold;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+.navbar-brand {
+  padding: 0px;
 }
 
 /* Upcoming*/

@@ -4,71 +4,58 @@ body{
   margin:0;
   background-color:#ffffff;
 }
-#outerbox
-{
-width:700px;
-margin: 1px auto;
-display: block;
-overflow:hidden;
-}
-#sliderbox{
- position:relative;
- width:2800px;
- animation: jatinder 20s infinite;
- }
- #sliderbox img{
-   float:left;
- }
- @keyframes jatinder{
-   0%
-   {
-     left:0px;
-   }
-   20%
-   {
-     left:0px;
-   }
-   25%
-   {
-     left:-700px;
-   }
-   45%
-   {
-     left:-700px;
-   }
-   50%
-   {
-     left:-1400px;
-   }
-   70%
-   {
-     left:-1400px;
-   }
-   75%
-   {
-     left:-2100px;
-   }
-   95%
-   {
-     left:-2100px;
-   }
-   100%
-   {
-     left:-2800px;
-   }
- }
 
 
 /* Global */
 .container{
-  width:80%;
+  width:100%;
   margin:auto;
   overflow:hidden;
+    
 }
 
-#socialmediaicons{
-position: absolute; right: 20px; top: 80px;
+.container-fluid{
+ padding-bottom: 25px;
+    
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.9;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    color: white;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+.navbar-brand {
+  padding: 0px;
+}
+
 
 ul{
   margin:0;
@@ -92,9 +79,6 @@ header{
   padding-top:10px;
   min-height:70px;
   border-bottom:#2841fc 10px solid;
-  #social-media-icons { float: right; }
-  #social-media-icons ul li { display: inline; }
-  #social-media-icons ul { padding: 10px 10px 10px 10px; float: right }
 
 }
 
@@ -119,10 +103,6 @@ header #branding h1{
   margin:0;
 }
 
-header nav{
-  float:right;
-  margin-top:10px;
-}
 
 header .highlight, header .current a,h2{
   color:#000000;
@@ -148,7 +128,7 @@ h2{
   margin-bottom:10px;
   color:black;
   text-align:center;
-  text-decoration: underline;
+  
 }
 
 #showcase p{
@@ -194,7 +174,7 @@ h2{
 }
 h1{
 text-align: center;
-text-decoration:underline;
+
 }
 
 /* Sidebar */
@@ -246,7 +226,8 @@ footer{
     text-align:center;
     width:100%;
   }
-
+    
+   
   header{
     padding-bottom:20px;
   }
@@ -255,6 +236,11 @@ footer{
     margin-top:40px;
   }
 
+   #newsletter{
+        
+    padding-top: 10px;
+    }   
+    
   #newsletter button, .quote button{
     display:block;
     width:100%;
@@ -265,3 +251,27 @@ footer{
     margin-bottom:5px;
   }
 }
+
+
+  .carousel-inner img {
+      
+      width: 100%; /* Set width to 100% */
+      margin: 0px;
+      display: block;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      line-height: 1;
+      
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+
+
